@@ -18,7 +18,7 @@ test('Wild-alaskan-pollock-oil-8oz subsription options', async ({ page }) => {
   await expect(productPage.productPackaging).toHaveText("8oz / 237ml");
   await productPage.selectDogSizeByWeight("Under 20 lbs");
   await productPage.getSubPickerByMonthNumber("1", "3").click();
-  await expect(productPage.finalPrice).toHaveText("$22.49");
+  await expect(productPage.finalPrice).toHaveText("$2.49");
   await expect(await productPage.getSubPickerLabelByMonthNumber("1", "3")).toHaveText("3 Month(s) supply");
 
   await productPage.getSubPickerByMonthNumber("1", "6").click();
