@@ -27,7 +27,7 @@ jobs:
     - name: Run Playwright tests
       run: |
         export DEBUG="playwright:*"   # Enables detailed Playwright logs
-        npx playwright test tests/pdp/oil/
+        npx playwright test tests-examples\demo-todo-app.spec.ts
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
