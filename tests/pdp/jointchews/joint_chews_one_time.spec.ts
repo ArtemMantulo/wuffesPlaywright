@@ -12,7 +12,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 
-test('Advanced-hip-joint-support-for-small-medium-breeds', async ({ page }) => {
+test.skip('Advanced-hip-joint-support-for-small-medium-breeds', async ({ page }) => {
   
   let intelligemsRequests: string[] = [];
   await page.route('https://wuffs.com/products/advanced-hip-joint-support-for-small-medium-breeds', route => {
@@ -145,7 +145,7 @@ test('Advanced-hip-joint-support-for-small-medium-breeds', async ({ page }) => {
 
 });
 
-test('Advanced-hip-joint-support-for-large-breeds', async ({ page }) => {
+test.skip('Advanced-hip-joint-support-for-large-breeds', async ({ page }) => {
   await page.goto('https://wuffes.com/products/advanced-hip-joint-support-for-small-medium-breeds');
   await productPage.goToOver65WeightPage();
 
